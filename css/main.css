@@ -215,10 +215,12 @@ section h3, h4, h5 {
 }
 #projects .project__link {
 	text-align:left;
+	margin-bottom: 0;
+}
+.project__link{
 	font-size: 1.8rem;
 	line-height: 2.2rem;
 	color: #556E9B;
-	margin-bottom: 0;
 }
 #montblank .project__link{
 	color: #AA9090;
