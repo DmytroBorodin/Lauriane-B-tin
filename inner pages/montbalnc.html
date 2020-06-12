@@ -7,6 +7,7 @@
 		<title>Montblanc</title>
 		<link href="https://fonts.googleapis.com/css2?family=Martel:wght@400;700;800&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 		<link rel="stylesheet" href="../css/style.css">
 		<link rel="stylesheet" href="../css/montblanc.css">
 		<link rel="stylesheet" href="../css/main.css">
@@ -67,12 +68,13 @@
 					</div>
 				</div>
 			</nav>
-			<div class="wrap mont-wrap">
+			<div class="fade-to"></div>
+			<div class="wrap mont-wrap" data-aos="fade-up">
 				<div class="mont-header__title-block">
-					<h3 class="mont__title section__subtitle">Evolution of Montblanc boutique concept</h3>
-					<p class="mont__date section__title-text">2019 - 2020</p>
+					<h3 class="mont__title section__subtitle">Evolution of <a href="#" target='_blank' class='inline__link'>Montblanc</a> boutique concept</h3>
+					<p class="mont__date section__title-text grey__text">2019 - 2020</p>
 				</div>
-				<p class="proj__subtext"><span class="semibold">Montblanc Gmbh.</span> Retail Design and Store Planning</p>
+				<p class="proj__subtext"><a href="#" target='_blank' class='inline__link'>Montblanc Gmbh.</a> Retail Design and Store Planning</p>
 				<div class="container proj-container">
 					<img src='../img/mont1.jpg' alt="" class="mont-header__img">
 					<img src='../img/mont2.jpg' alt="" class="mont-header__img">
@@ -187,6 +189,10 @@
 						The Personalization has for purpose to allow customers to personalize their leather goods.
 						First of all, we set up a meeting with all the stakeholders to define needs for everyone. Then, we gathered every week minimum to discuss the project evolution.
 					</p>
+					<img src="../img/g0.jpg" class='g1 mid-width' alt="">
+					<p class="legend__text">
+						Picture of the former Personalization module.
+					</p>
 				</div>
 				<div class="content__block">
 					<h4 class="mont-subtitle martel__font">01. How do I start a project?</h4>
@@ -207,7 +213,7 @@
 					</div>
 					<img src="../img/g5.jpg" class='g1 mt-0' alt="">
 					<p class="mont-header__text mid__width mt-30 mt-20">
-						To help stakeholders understand how the Personalization unit will look like, I integrated <span class="grey__text">(via Photoshop)</span> the module in a picture of a real shop. With this integration, we can see the size and products in the surrounded units.
+						With Isabelle Cappuccio and one of my former colleague Silvia Lucca, we decided to create steps which will address directly to the customer and will make him understand what to do. We also placed the tools and products that will be used to conceive their personalized leather good, such as coloured foils, different fonts stamps and customized leather goods examples. To help stakeholders understand how the Personalization unit will look like, I integrated <span class="grey__text">(via Photoshop)</span> the module in a picture of a real shop. With this integration, we can see the size and products in the surrounded units.
 					</p>
 				</div>
 				<div class="question__block mid__width mb-40">
@@ -284,6 +290,13 @@
 			<p>© 2020 Design by Lauriane Bétin</p>
 		</footer>
 		<!-- Footer end -->
+		 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		  <script>
+		    AOS.init({
+				delay: 0, // values from 0 to 3000, with step 50ms
+				duration: 500
+		    });
+		  </script>
 		<script src="../js/montblanc.js"></script>
 	</body>
 </html>

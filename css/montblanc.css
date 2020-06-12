@@ -1,5 +1,7 @@
+.fade-to {
+	height: 11.7rem;
+}
 .mont-header .wrap {
-	margin-top: 11.7rem;
 	padding-bottom: 5rem;
 }
 .mont-section {
@@ -11,6 +13,14 @@
 h1, h2, h3, h4, h5, h6{
 	color: #AA9090;
 	font-weight: 700;
+}
+.inline__link{
+	display: inline;
+	font-weight: 800;
+	color:inherit;
+}
+.inline__link:hover{
+	color: #A5AAB6;
 }
 .mt-30 {
 	margin-top: 3rem;
@@ -24,7 +34,7 @@ h1, h2, h3, h4, h5, h6{
 .mont-header__title-block {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: baseline;
 }
 .mont-header .section__subtitle {
 	margin-top: 0;
@@ -34,9 +44,6 @@ h1, h2, h3, h4, h5, h6{
 }
 .mont__title {
 	font-family: Martel;
-}
-.mont__date {
-	
 }
 .proj__subtext {
 	font-size: 2.0rem;
@@ -148,6 +155,12 @@ h1, h2, h3, h4, h5, h6{
 	line-height: 4.0rem;
 	font-family: Martel;
 	font-weight: 800;
+}
+.legend__text {
+	font-style: italic;
+	font-size: 1.6rem;
+	line-height: 2.6rem;
+	margin-top: 2rem;
 }
 .g1 {
 	margin-top: 3rem;
@@ -305,14 +318,24 @@ h1, h2, h3, h4, h5, h6{
 	    margin-bottom: 1rem;
 	}
 }
+@media screen and (max-width: 768px){
+	.mont__title {
+		width: 75%;
+	}
+	.mont__date {
+		margin-top: 6px;
+	}
+}
 @media screen and (max-width: 574px){
 	.mont-header .section__subtitle {
 	    margin-top: 0;
 	    font-size: 1.8rem;
 		line-height: 2.6rem;
 	}
+	.fade-to {
+		height: 8.4rem;
+	}
 	.mont-header .wrap {
-	    margin-top: 8.4rem;
 	    padding-bottom: 3rem;
 	}
 	.mont-header__title-block {

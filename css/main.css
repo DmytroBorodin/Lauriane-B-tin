@@ -28,10 +28,6 @@ section{
 	margin: auto;
 	border-bottom: 1px solid #C4C4C4;
 }
-.wrapper {
-	padding-left: 1.6rem;
-}
-
 /* Header */
 #header {
 	position: relative;
@@ -63,9 +59,6 @@ section{
 .links__block a {
 	transition: all 0.3s ease;
 }
-.links__block a:hover {
-	color: #A5AAB6;
-}
 .menu__block {
 	width: 38.3rem;
 	margin-right: 4.8rem;
@@ -79,19 +72,30 @@ section{
 .menu__link {
 	font-size: 1.8rem;
 	line-height: 2.2rem;
+	color: #A5AAB6;
+}
+.menu__link:hover {
 	color: #1B263A;
 }
-.active {
+
+a.active {
 	font-weight: 800;
+	color: #1B263A;
 }
 .social__block {
 	display: flex;
 	justify-content: space-between;
-	width: 14.2rem;
 }
 .social__link {
-	font-size: 2.2rem;
+	font-size: 2.0rem;
+	margin-right: 1.4rem;
 	color: #1B263A;
+}
+.social__link:hover {
+	color: #A5AAB6;
+}
+.social__link:last-child{
+	margin-right: 0;
 }
 .header__title-text {
 	width: 66.1rem;
@@ -131,36 +135,43 @@ section h3, h4, h5 {
 .project__block {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	margin-bottom: 13.8rem;
 }
 .img__block {
 	position: relative;
 	width: 48.54%;
-	padding-top: calc(48.54% - 8px);
+	padding-top: 48.54%;
 }
-#montblank .img__block{
+.inner-img__block {
+	position: absolute;
+	top: -1.8rem;
+	padding-top: calc(100% - 8px);
+	width: 100%;
+}
+#montblank .inner-img__block{
 	border: 4px solid #AA9090;
 }
-#docboom .img__block{
-	border: 4px solid #E3B3B8;
+#docboom .inner-img__block{
+	border: 4px solid  #D39292;
 }
-#universe .img__block{
+#universe .inner-img__block{
 	border: 4px solid #729FC0;
 }
-#cafe .img__block{
+#cafe .inner-img__block{
 	border: 4px solid #82AEAE;
 }
-#payever .img__block{
+#payever .inner-img__block{
 	border: 4px solid #668994;
 }
-#dailyUI .img__block {
+#dailyUI .inner-img__block {
 	border: 4px solid #F5BE6C;
 }
 .project__img {
 	position: absolute;
-	width: calc(100% + 8px);
-	top: 1.8rem;
 	left: 1.8rem;
+	top:0;
+	width:100%;
 }
 .project__img img {
 	width: 100%;
@@ -183,7 +194,7 @@ section h3, h4, h5 {
 	background-color: #AA9090;
 }
 #docboom .border__block{
-	background-color: #E3B3B8;
+	background-color: #D39292;
 }
 #universe .border__block{
 	background-color: #729FC0;
@@ -211,7 +222,7 @@ section h3, h4, h5 {
 	color: #AA9090;
 }
 #docboom .project__link{
-	color: #E3B3B8;
+	color: #D39292;
 }
 #universe .project__link{
 	color: #729FC0;
@@ -241,17 +252,20 @@ section h3, h4, h5 {
 	justify-content: space-between;
 	align-items: center;
 }
+.about__block .project__title {
+	font-size: 2.2rem;
+}
 .about__block img {
 	width: 19.42%;
 }
 .about__text-block {
-	width: 74.1%;
+	width: 73.8%;
 }
 .about__text-block .project__title {
 	margin-bottom: 0;
 }
 .about__text {
-	font-size: 2.4rem;
+	font-size: 1.8rem;
 	line-height: 4.0rem;
 	font-family: Martel;
 }
@@ -285,7 +299,7 @@ section h3, h4, h5 {
 	color: #9EA4B0;
 	font-size: 1.6rem;
 }
-#about .project__link {
+.project__link {
 	text-align: right;
 	font-weight: 500;
 	font-size: 1.8rem;
@@ -329,6 +343,9 @@ section h3, h4, h5 {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+}
+.video__block, .cuisine__block .images__block{
+	margin-bottom: 2rem;
 }
 .images__block {
 	display: flex;
@@ -553,6 +570,13 @@ section h3, h4, h5 {
 		font-size: 1.6rem;
 		line-height: 2.7rem;
 	}
+	#hobbies .project__link {
+	    text-align: left;
+	    margin-bottom: 0;
+	}
+	.video__block, .cuisine__block .images__block {
+	    margin-bottom: 0;
+	}
 }
 @media screen and (max-width: 768px) {
 	.wrap {
@@ -566,12 +590,16 @@ section h3, h4, h5 {
 		align-items: flex-start;
 	}
 	.img__block {
-		width: calc(100% - 36px);
-		padding-top: calc(100% - 44px);
+	    width: calc(100% - 18px);
+	    padding-top: calc(100% - 18px);
 	}
 	.description__block {
 		width: 100%;
 		margin-top: 3.4rem;
+		margin-left: 1.8rem;
+	}
+	.project__description {
+		text-align: justify;
 	}
 	.about__block img {
 		width: 25%;
@@ -596,6 +624,13 @@ section h3, h4, h5 {
 	}
 }
 @media screen and (max-width: 574px) {
+	#navBar {
+		padding: 0;
+	}
+	.logo__block {
+		width: 32.7rem;
+		margin: auto;
+	}
 	.wrap {
 		width: 327px;
 	}
@@ -693,9 +728,13 @@ section h3, h4, h5 {
 	.video__block, .cuisine__block {
 	    margin-top: 5rem;
 	}
+	.galary__block {
+		width: 97.86%;
+		margin: 0 auto 5.8%;
+	}
 	.galary__block img{
-		width: 47.1%;
-		margin-bottom: 5.8%;
+		width: 48.125%;
+		margin-bottom: 3.75%;
 	}
 	.newDisabled {
 		display: none;
@@ -739,5 +778,9 @@ section h3, h4, h5 {
 @media screen and (max-width: 374px) {
 	.wrap {
 		width: 300px;
+	}
+	.logo__block {
+		width: 30rem;
+		margin: auto;
 	}
 }

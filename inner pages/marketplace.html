@@ -4,9 +4,10 @@
 		<meta charset="utf-8">
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Marketplace</title>
+		<title>Payever</title>
 		<link href="https://fonts.googleapis.com/css2?family=Martel:wght@400;700;800&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 		<link rel="stylesheet" href="../css/style.css">
 		<link rel="stylesheet" href="../css/marketplace.css">
 		<link rel="stylesheet" href="../css/main.css">
@@ -67,10 +68,11 @@
 					</div>
 				</div>
 			</nav>
-			<div class="wrap mont-wrap">
+			<div class="fade-to"></div>
+			<div class="wrap mont-wrap" data-aos="fade-up">
 				<div class="mont-header__title-block">
-					<h3 class="mont__title section__subtitle">Marketplace (72 hours challenge)</h3>
-					<p class="mont__date section__title-text">2020</p>
+					<h3 class="mont__title section__subtitle"><span>Payever</span> (72 Hours Challenge)</h3>
+					<p class="mont__date section__title-text grey__text">2020</p>
 				</div>
 				<p class="proj__subtext"><span class="semibold">Payever.</span>  UX/UI Design, Marketing and Media</p>
 				<div class="container proj-container">
@@ -157,7 +159,7 @@
 		<section id="personalization">
 			<div class="wrap mont-wrap">
 				<div class="content__block mid__width">
-					<h4 class="mont-subtitle martel__font">UX/UI design.</h4>
+					<h4 class="mont-subtitle proj__subtitle">UX/UI design.</h4>
 					<p class="mont-header__text">
 						Marketplace is an online service for businesses to help them create their marketplace and bring other businesses and consumers together.
 					</p>
@@ -212,7 +214,7 @@
 		<section id="marketing">
 			<div class="wrap mont-wrap">
 				<div class="content__block">
-					<h4 class="mont-subtitle martel__font">Marketing</h4>
+					<h4 class="mont-subtitle proj__subtitle">Marketing</h4>
 					<p class="mont-header__text mid__width">
 						Once the product designed, I worked on finding images and keywords to enhance this new service, in order to promote it online.
 					</p>
@@ -228,11 +230,11 @@
 				<div class="container">
 					<div class="project-preview__block">
 						<a href=""><span class="icon-returnArrow"></span><span>Previous project</span></a>
-						<img src="../img/market11.jpg" alt="">
+						<img src="../img/market11.jpg" class='preview__img' alt="">
 					</div>
 					<div class="project-preview__block">
 						<a href=""><span>Next project</span><span class="icon-Back-to-gallery"></span></a>
-						<img src="../img/market12.jpg" alt="">
+						<img src="../img/market12.jpg" class='preview__img' alt="">
 					</div>
 				</div>
 			</div>
@@ -243,6 +245,13 @@
 			<p>© 2020 Design by Lauriane Bétin</p>
 		</footer>
 		<!-- Footer end -->
+		 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		  <script>
+		    AOS.init({
+				delay: 0, // values from 0 to 3000, with step 50ms
+				duration: 500
+		    });
+		  </script>
 		<script src="../js/marketplace.js"></script>
 	</body>
 </html>

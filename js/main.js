@@ -1,6 +1,6 @@
 'use strict'
 
-let logo = document.querySelector('.logo__block');
+let logo = document.querySelector('.logo__title');
 let homeLink = document.querySelector('#home');
 let projectsLink = document.querySelector('#projectsLink');
 let projectsSection = document.querySelector('#projects');
@@ -11,6 +11,8 @@ let aboutSection = document.querySelector('#about');
 let hobbiesLink = document.querySelector('#hobbiesLink');
 let hobbiesSection = document.querySelector('#hobbies');
 
+let sectionsArray = [projectsSection, aboutSection, hobbiesSection,]
+
 let menuLinks = document.querySelectorAll('.menu__link');
 let menuLinksArray = [...menuLinks];
 
@@ -18,7 +20,8 @@ let burgerBtn = document.querySelector('.burger__menu');
 let linksBlock = document.querySelector('.links__block');
 let navBar = document.querySelector('#navBar');
 let navCont = document.querySelector('.logo__block');
-
+let navBarHeight = navBar.clientHeight;
+console.log(navBarHeight);
 logo.addEventListener('click', () => {
 	window.scroll({
 		top: 0,
@@ -43,9 +46,42 @@ homeLink.addEventListener('click', (e) => {
 	})
 });
 
+window.addEventListener('scroll', () => {
+	if (projectsSection.getBoundingClientRect().top <= 67){
+		menuLinksArray.forEach(link => {
+			link.classList.remove('active');
+		})
+		projectsLink.classList.add('active');	
+	}else if(projectsSection.getBoundingClientRect().top >= 67){
+		menuLinksArray.forEach(link => {
+			link.classList.remove('active');
+		})
+		homeLink.classList.add('active');
+	}
+	if (aboutSection.getBoundingClientRect().top <= 67){
+		menuLinksArray.forEach(link => {
+			link.classList.remove('active');
+		})
+		aboutLink.classList.add('active');	
+	}
+	if (hobbiesSection.getBoundingClientRect().top <= 67){
+		menuLinksArray.forEach(link => {
+			link.classList.remove('active');
+		})
+		hobbiesLink.classList.add('active');	
+	}
+})
+
 projectsLink.addEventListener('click', (e) => {
+	
 	e.preventDefault();
-	projectsSection.scrollIntoView({behavior: "smooth",});
+	let y = projectsSection.getBoundingClientRect().top + pageYOffset;
+	let scrollTo = y - navBarHeight;
+	window.scroll({
+		top: scrollTo,
+		left: 0,
+		behavior: 'smooth'
+	});
 	menuLinksArray.forEach(link => {
 		link.classList.remove('active');
 		projectsLink.classList.add('active');
@@ -57,7 +93,13 @@ projectsLink.addEventListener('click', (e) => {
 
 aboutLink.addEventListener('click', (e) => {
 	e.preventDefault();
-	aboutSection.scrollIntoView({behavior: "smooth",});
+	let y = aboutSection.getBoundingClientRect().top + pageYOffset;
+	let scrollTo = y - navBarHeight;
+	window.scroll({
+		top: scrollTo,
+		left: 0,
+		behavior: 'smooth'
+	});
 	menuLinksArray.forEach(link => {
 		link.classList.remove('active');
 		aboutLink.classList.add('active');
@@ -69,7 +111,13 @@ aboutLink.addEventListener('click', (e) => {
 
 hobbiesLink.addEventListener('click', (e) => {
 	e.preventDefault();
-	hobbiesSection.scrollIntoView({behavior: "smooth",});
+	let y = hobbiesSection.getBoundingClientRect().top + pageYOffset;
+	let scrollTo = y - navBarHeight;
+	window.scroll({
+		top: scrollTo,
+		left: 0,
+		behavior: 'smooth'
+	});
 	menuLinksArray.forEach(link => {
 		link.classList.remove('active');
 		hobbiesLink.classList.add('active');

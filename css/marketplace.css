@@ -1,5 +1,7 @@
+.fade-to {
+	height: 11.7rem;
+}
 .mont-header .wrap {
-	margin-top: 11.7rem;
 	padding-bottom: 5rem;
 }
 .mont-section {
@@ -24,7 +26,7 @@ h1, h2, h3, h4, h5, h6{
 .mont-header__title-block {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: baseline;
 }
 .mont-header .section__subtitle {
 	margin-top: 0;
@@ -157,7 +159,7 @@ h1, h2, h3, h4, h5, h6{
 .mid__width .mont-header__text {
 	width: 100%;
 }
-.mid__width .mont-subtitle {
+.content__block .proj__subtitle {
 	margin-bottom: 2rem;
 	font-size: 2.4rem;
 	line-height: 4.0rem;
@@ -365,14 +367,26 @@ h1, h2, h3, h4, h5, h6{
 	    padding-bottom: 8rem;
 	}
 }
+@media screen and (max-width: 768px){
+	.mont__title {
+		width: 80%;
+		display: flex;
+		flex-direction: column;
+	}
+	.mont__date {
+		margin-top: 6px;
+	}
+}
 @media screen and (max-width: 574px){
 	.mont-header .section__subtitle {
 	    margin-top: 0;
 	    font-size: 1.8rem;
 		line-height: 2.6rem;
 	}
+	.fade-to {
+		height: 8.4rem;
+	}
 	.mont-header .wrap {
-	    margin-top: 8.4rem;
 	    padding-bottom: 3rem;
 	}
 	.mont-header__title-block {
@@ -449,7 +463,7 @@ h1, h2, h3, h4, h5, h6{
 	#personalization {
 	    padding-top: 4rem;
 	}
-	.mid__width .mont-subtitle {
+	.content__block .proj__subtitle {
 	    font-size: 2.2rem;
 		line-height: 3.7rem;
 		margin-bottom: 1rem;
@@ -505,7 +519,7 @@ h1, h2, h3, h4, h5, h6{
 	#prefooter .wrap {
 	    padding: 2rem 0 4rem;
 	}
-	.project-preview__block img{
-		width: 140px;
+	.preview__img {
+		width:14rem;
 	}
 }

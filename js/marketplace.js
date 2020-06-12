@@ -19,6 +19,11 @@ let linksBlock = document.querySelector('.links__block');
 let navBar = document.querySelector('#navBar');
 let navCont = document.querySelector('.logo__block');
 
+let scrollHeight = () => {
+	var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+	return scrollTop;
+}
+
 logo.addEventListener('click', () => {
 	window.scroll({
 		top: 0,
@@ -28,19 +33,21 @@ logo.addEventListener('click', () => {
 });
 
 homeLink.addEventListener('click', (e) => {
-	e.preventDefault();
-	window.scroll({
-		top: 0,
-		left: 0,
-		behavior: 'smooth'
-	});
-	menuLinksArray.forEach(link => {
-		link.classList.remove('active');
-		homeLink.classList.add('active');
-		linksBlock.classList.remove('shown');
-		navCont.classList.remove('contShown');
-		burgerBtn.classList.remove('active__burger');
-	})
+	let scroll = scrollHeight();
+	console.log(scroll);
+	if (scroll != 0) {
+		e.preventDefault();
+		window.scroll({
+			top: 0,
+			left: 0,
+			behavior: 'smooth'
+		});
+		menuLinksArray.forEach(link => {
+			linksBlock.classList.remove('shown');
+			navCont.classList.remove('contShown');
+			burgerBtn.classList.remove('active__burger');
+		})
+	}
 });
 
 projectsLink.addEventListener('click', (e) => {
