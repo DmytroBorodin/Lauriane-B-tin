@@ -12,7 +12,7 @@
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
-  speak: none;
+  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -33,9 +33,12 @@
 .icon-Linkedin:before {
   content: "\e902";
 }
-.icon-Twitter:before {
+.icon-returnArrow:before {
   content: "\e903";
 }
-.icon-Vector:before {
+.icon-Twitter:before {
   content: "\e904";
+}
+.icon-Vector:before {
+  content: "\e905";
 }
