@@ -420,13 +420,13 @@ h1, h2, h3, h4, h5, h6{
 	.g2 {
 		width: 48.62%;
 		margin-bottom: 1rem;
+		align-self: flex-start;
 	}
 	.g2:last-child {
 		width: 100%;
 	}
-	.container.flex-wrap {
+	.flex-wrap {
 		flex-wrap: wrap;
-		justify-content: flex-start;
 	}
 	.mt-0 {
 		margin-top: 0;
