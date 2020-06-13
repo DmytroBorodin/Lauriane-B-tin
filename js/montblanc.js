@@ -60,7 +60,6 @@ projectsLink.addEventListener('click', (e) => {
 });
 
 aboutLink.addEventListener('click', (e) => {
-	e.preventDefault();
 	menuLinksArray.forEach(link => {
 		link.classList.remove('active');
 		aboutLink.classList.add('active');
@@ -71,7 +70,6 @@ aboutLink.addEventListener('click', (e) => {
 });
 
 hobbiesLink.addEventListener('click', (e) => {
-	e.preventDefault();
 	menuLinksArray.forEach(link => {
 		link.classList.remove('active');
 		hobbiesLink.classList.add('active');
