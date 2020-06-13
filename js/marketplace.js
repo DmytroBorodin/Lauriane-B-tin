@@ -1,6 +1,6 @@
 'use strict'
 
-let logo = document.querySelector('.logo__block');
+let logo = document.querySelector('.logo__title');
 let homeLink = document.querySelector('#home');
 let projectsLink = document.querySelector('#projectsLink');
 let projectsSection = document.querySelector('#projects');
@@ -51,7 +51,6 @@ homeLink.addEventListener('click', (e) => {
 });
 
 projectsLink.addEventListener('click', (e) => {
-	e.preventDefault();
 	menuLinksArray.forEach(link => {
 		link.classList.remove('active');
 		projectsLink.classList.add('active');

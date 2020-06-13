@@ -14,6 +14,14 @@ h1, h2, h3, h4, h5, h6{
 	color: #668994;
 	font-weight: 700;
 }
+.inline__link{
+	display: inline;
+	font-weight: 800;
+	color:inherit;
+}
+.inline__link:hover{
+	color: #A5AAB6;
+}
 .mt-30 {
 	margin-top: 3rem;
 }

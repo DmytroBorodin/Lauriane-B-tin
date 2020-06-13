@@ -47,24 +47,24 @@ homeLink.addEventListener('click', (e) => {
 });
 
 window.addEventListener('scroll', () => {
-	if (projectsSection.getBoundingClientRect().top <= 67){
+	if (projectsSection.getBoundingClientRect().top <= 150){
 		menuLinksArray.forEach(link => {
 			link.classList.remove('active');
 		})
 		projectsLink.classList.add('active');	
-	}else if(projectsSection.getBoundingClientRect().top >= 67){
+	}else if(projectsSection.getBoundingClientRect().top >= 150){
 		menuLinksArray.forEach(link => {
 			link.classList.remove('active');
 		})
 		homeLink.classList.add('active');
 	}
-	if (aboutSection.getBoundingClientRect().top <= 67){
+	if (aboutSection.getBoundingClientRect().top <= 150){
 		menuLinksArray.forEach(link => {
 			link.classList.remove('active');
 		})
 		aboutLink.classList.add('active');	
 	}
-	if (hobbiesSection.getBoundingClientRect().top <= 67){
+	if (hobbiesSection.getBoundingClientRect().top <=150){
 		menuLinksArray.forEach(link => {
 			link.classList.remove('active');
 		})
