@@ -524,6 +524,9 @@ h1, h2, h3, h4, h5, h6{
 	.project-preview__block a span:first-child {
 	    font-size: 1.2rem;
 	}
+	.project-preview__block:last-child a span:first-child {
+	    font-size: 1.6rem;
+	}
 	#prefooter .wrap {
 	    padding: 2rem 0 4rem;
 	}

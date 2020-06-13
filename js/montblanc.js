@@ -31,25 +31,14 @@ logo.addEventListener('click', () => {
 	});
 });
 
-homeLink.addEventListener('click', (e) => {
-	let scroll = scrollHeight();
-	console.log(scroll);
-	if (scroll != 0) {
-		e.preventDefault();
-		window.scroll({
-			top: 0,
-			left: 0,
-			behavior: 'smooth'
-		});
-		menuLinksArray.forEach(link => {
-			linksBlock.classList.remove('shown');
-			navCont.classList.remove('contShown');
-			burgerBtn.classList.remove('active__burger');
-		})
-	}
-});
-
 projectsLink.addEventListener('click', (e) => {
+	let y = projectsSection.getBoundingClientRect().top + pageYOffset;
+	let scrollTo = y - navBarHeight;
+	window.scroll({
+		top: scrollTo,
+		left: 0,
+		behavior: 'smooth'
+	});
 	menuLinksArray.forEach(link => {
 		link.classList.remove('active');
 		projectsLink.classList.add('active');
