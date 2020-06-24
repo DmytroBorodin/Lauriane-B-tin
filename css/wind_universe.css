@@ -204,8 +204,14 @@ img {
 #section1 .mont-wrap {
 	padding-bottom: 4rem;
 }
+#section1 {
+	padding-top: 6rem;
+}
 
 /* Section2 */
+#section2 {
+	padding-top: 6rem;
+}
 #section2 .container {
 	margin: 3rem 0;
 }
@@ -223,6 +229,9 @@ img {
 }
 
 /* Section3 */
+#section3 {
+	padding-top: 6rem;
+}
 #beaufort__wind .mont-header__text{
 	margin-bottom: 0;
 }
