@@ -811,6 +811,11 @@ section h3, h4, h5 {
 	#footer p {
 	    font-size: 1.2rem;
 	    line-height: 1.4rem;
+	    text-align: center;
+	    width: 327px;
+	    margin: auto;
+	    display: flex;
+	    flex-direction: column;
 	}
 }
 @media screen and (max-width: 374px) {
@@ -820,5 +825,9 @@ section h3, h4, h5 {
 	.logo__block {
 		width: 30rem;
 		margin: auto;
+	}
+	#footer p {
+	    width: 300px;
+	    margin: auto;
 	}
 }
