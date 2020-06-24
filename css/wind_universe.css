@@ -782,7 +782,7 @@ h5 .note__text {
 	.down__arrow {
 		display: block;
 		position: relative;
-		width: 2px;
+		width: 1px;
 		height: 3rem;
 		background-color: #729FC0;
 		margin: auto;
@@ -801,7 +801,7 @@ h5 .note__text {
 	}
 	.down__arrow span:last-child {
 		transform: rotate(45deg);
-		left: 4.5px;
+		left: 2.5px;
 	}
 	#large__margin {
 	    margin-bottom: 6rem;
