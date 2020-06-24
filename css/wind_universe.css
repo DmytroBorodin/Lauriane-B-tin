@@ -774,7 +774,7 @@ h5 .note__text {
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
-		margin: 1rem 0;
+		margin: 1rem 0 0.4rem;
 	}
 	.arrow__none {
 		display: none;
@@ -816,6 +816,21 @@ h5 .note__text {
 	    padding-top: 2rem;
 	}
 	.w40 {
+	    margin-bottom: 0;
+	}
+	.img__container{
+		flex-wrap: wrap;
+	}
+	#section9  .img__container img {
+		width: 100%;
+	}
+	#section9  .img__container img:first-child {
+		margin-bottom: 2rem;
+	}
+	.mb-20 {
+		margin-bottom: 2rem;
+	}
+	#game2 {
 	    margin-bottom: 0;
 	}
 }
@@ -915,6 +930,10 @@ h5 .note__text {
 	.personalization .main__list li:last-child {
 	    margin-bottom: 0rem;
 	}
+	.width__as__img {
+	    width: 100%;
+	    margin-top: 2rem;
+	}
 	#section10 .main__list li:last-child {
 	    margin-bottom: 2rem;
 	}
@@ -954,6 +973,10 @@ h5 .note__text {
 	}
 	#section9 {
 	    padding-top: 3.4rem;
+	}
+	#section9 #model__blocks img {
+	    width: 50%;
+	    margin: auto;
 	}
 	.legend__text {
 	    font-size: 1.4rem;
