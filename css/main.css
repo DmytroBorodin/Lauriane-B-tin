@@ -52,6 +52,9 @@ section{
 	line-height: 2.9rem;
 	cursor: pointer;
 }
+.logo__title a{
+	color:  #1B263A;
+}
 .links__block {
 	display: flex;
 	align-items: center
