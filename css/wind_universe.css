@@ -782,26 +782,38 @@ h5 .note__text {
 	.down__arrow {
 		display: block;
 		position: relative;
-		width: 1px;
 		height: 3rem;
-		background-color: #729FC0;
+		width: 7px;
 		margin: auto;
+		display: flex;
+		justify-content: center;
 	}
-	.down__arrow span {
-		position: absolute;
-		bottom: 0;
+	.down__arrow-span{
 		display: block;
 		width: 1px;
-		height: 0.7rem;
+		height: inherit;
+		background-color: #729FC0; 
+	}
+	.span__arrow {
+		position: absolute;
+		display: flex;
+		justify-content: space-between;
+		bottom: 0;
+		width: 7px;
+		height: 7px;
+		left: 0;
+	}
+	.span__arrow span {
+		display: block;
+		width: 1px;
+		height: inherit;
 		background-color: #729FC0;
 	}
-	.down__arrow span:first-child {
+	.span__arrow span:first-child {
 		transform: rotate(-45deg);
-		left: -3px;
 	}
-	.down__arrow span:last-child {
+	.span__arrow span:last-child {
 		transform: rotate(45deg);
-		left: 3px;
 	}
 	#large__margin {
 	    margin-bottom: 6rem;
