@@ -801,7 +801,7 @@ h5 .note__text {
 	}
 	.down__arrow span:last-child {
 		transform: rotate(45deg);
-		left: 2.5px;
+		left: 3px;
 	}
 	#large__margin {
 	    margin-bottom: 6rem;
