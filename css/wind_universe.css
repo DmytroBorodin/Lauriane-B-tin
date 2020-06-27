@@ -794,26 +794,34 @@ h5 .note__text {
 		height: inherit;
 		background-color: #729FC0; 
 	}
-	.span__arrow {
+	.over__block {
 		position: absolute;
-		display: flex;
-		justify-content: space-between;
 		bottom: 0;
 		width: 7px;
 		height: 7px;
 		left: 0;
+		bottom: -0.5px;
+	}
+	.span__arrow {
+		height: inherit;
+		width: 100%;
+		position: relative;
 	}
 	.span__arrow span {
 		display: block;
+		position: absolute;
 		width: 1px;
 		height: inherit;
 		background-color: #729FC0;
 	}
 	.span__arrow span:first-child {
 		transform: rotate(-45deg);
+		left: 1px;
 	}
 	.span__arrow span:last-child {
 		transform: rotate(45deg);
+		top: 0;
+		right: 1px;
 	}
 	#large__margin {
 	    margin-bottom: 6rem;
