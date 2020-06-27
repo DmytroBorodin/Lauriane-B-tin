@@ -7,8 +7,6 @@ let linksBlock = document.querySelector('.links__block');
 let navBar = document.querySelector('#navBar');
 let navCont = document.querySelector('.logo__block');
 
-let images = document.querySelectorAll('img[data-src]');
-let imagesArray = [...images];
 
 burgerBtn.addEventListener('click', () => {
 	burgerBtn.classList.toggle('active__burger');
@@ -17,9 +15,25 @@ burgerBtn.addEventListener('click', () => {
 	navCont.classList.toggle('contShown');
 })
 
-imagesArray.forEach(function(img) {
-	img.setAttribute('src', img.getAttribute('data-src'));
-	img.onload = function() {
-	img.removeAttribute('data-src');
-	};
-});
+const targets = document.querySelectorAll('img');
+
+const lazyLoad = target => {
+  const io = new IntersectionObserver((entries, observer) => {
+    console.log(entries)
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const img = entry.target;
+        const src = img.getAttribute('data-src');
+
+        img.setAttribute('src', src);
+        img.classList.add('fade');
+
+        observer.disconnect();
+      }
+    });
+  });
+
+  io.observe(target)
+};
+
+targets.forEach(lazyLoad);
