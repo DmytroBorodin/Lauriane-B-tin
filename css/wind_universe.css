@@ -341,6 +341,7 @@ h5 .note__text {
 }
 #game1 .block__with__img img {
 	width: 100%;
+	image-orientation: from-image;
 }
 #game1 .block__with__img p {
 	color: #000;
@@ -519,6 +520,7 @@ h5 .note__text {
 	width: 100%;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
 	margin-bottom: 2rem;
+	height: 80%;
 }
 .scenario .block__with__img:first-child {
     width: 48.73%;
@@ -997,6 +999,10 @@ h5 .note__text {
 	#section9 #model__blocks img {
 	    width: 50%;
 	    margin: auto;
+	}
+	#section9 #model__blocks img.model__icon {
+	    width: 25%;
+	    margin: 0 auto 2rem;
 	}
 	.legend__text {
 	    font-size: 1.4rem;
