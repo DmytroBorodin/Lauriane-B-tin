@@ -341,16 +341,12 @@ h5 .note__text {
 }
 #game1 .block__with__img img {
 	width: 100%;
-	image-orientation: from-image;
 }
 #game1 .block__with__img p {
 	color: #000;
 }
 #img1__block {
 	padding-top: 1rem;
-}
-.container .block__with__img:first-child {
-	width: 33%;
 }
 .container .block__with__img {
 	width: 31.46%;
@@ -520,7 +516,6 @@ h5 .note__text {
 	width: 100%;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
 	margin-bottom: 2rem;
-	height: 80%;
 }
 .scenario .block__with__img:first-child {
     width: 48.73%;

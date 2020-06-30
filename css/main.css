@@ -287,7 +287,6 @@ section h3, h4, h5 {
 .about__text {
 	font-size: 1.8rem;
 	line-height: 4.0rem;
-	font-family: Martel;
 }
 .prof-info__block {
 	margin-top: 10rem;
@@ -631,9 +630,6 @@ section h3, h4, h5 {
 		width: calc(100% - 1.8rem);
 		margin-top: 3.4rem;
 		margin-left: 1.8rem;
-	}
-	.project__description {
-		text-align: justify;
 	}
 	.about__block img {
 		width: 25%;

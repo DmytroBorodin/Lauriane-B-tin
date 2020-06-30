@@ -227,6 +227,12 @@ h1, h2, h3, h4, h5, h6{
 .mn1 {
 	margin-top: 4rem;
 }
+#final {
+	margin-bottom: 3rem;
+}
+#mont51 {
+	width: 100%;
+}
 /* Prefooter */
 #prefooter {
 	padding-top: 0;
@@ -344,6 +350,9 @@ h1, h2, h3, h4, h5, h6{
 	.mn1 {
 		margin-top: 3rem;
 	}
+	#final {
+		margin-bottom: 2rem;
+	}
 }
 @media screen and (max-width: 574px){
 	.mont-header .section__subtitle {
@@ -455,6 +464,15 @@ h1, h2, h3, h4, h5, h6{
 	}
 	.mb-40 {
 		margin-bottom: 4rem;
+	}
+	.hr-type {
+		flex-direction: column;
+	}
+	.hr-type img{
+		width: 100%;
+	}
+	.hr-type img:last-child{
+		margin-top: 2rem;
 	}
 	.half-width .mont-subtitle {
 	    margin-bottom: 1.0rem;
