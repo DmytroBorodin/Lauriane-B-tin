@@ -13,6 +13,12 @@ html{
 img, a, button {
 	display: block;
 }
+img {
+	align-self: flex-start;
+}
+.w4 {
+	align-self: stretch;
+}
 ul{
 	list-style-type: none;
 	padding: 0;
@@ -286,7 +292,8 @@ section h3, h4, h5 {
 }
 .about__text {
 	font-size: 1.8rem;
-	line-height: 4.0rem;
+	line-height: 2.8rem;
+	font-family: Martel;
 }
 .prof-info__block {
 	margin-top: 10rem;
@@ -656,12 +663,6 @@ section h3, h4, h5 {
 @media screen and (max-width: 574px) {
 	#navBar {
 		padding: 0;
-	}
-	img {
-		align-self: flex-start;
-	}
-	.w4 {
-		align-self: stretch;
 	}
 	.logo__block {
 		width: 32.7rem;
